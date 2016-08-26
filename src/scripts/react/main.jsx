@@ -42,7 +42,11 @@ VSS.require(["TFS/Dashboards/WidgetHelpers", "TFS/Chat/RestClient", "TFS/Version
                         );
                         return WidgetHelpers.WidgetStatusHelper.Success();
                     }, function (error) {
-                        return WidgetHelpers.WidgetStatusHelper.Failure(error.message);
+                        if(error.message.indexOf("permission(s)") != -1) {
+                            return WidgetHelpers.WidgetStatusHelper.Failure("Whoops! Looks like you aren't part of this Team Room.");
+                        } else {
+                            return WidgetHelpers.WidgetStatusHelper.Failure(error.message);
+                        }
                     });
             }
         }

@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "vsts-extensions-team-activity-feed",
-    "version": "1.0.1",
+    "version": "1.0.8",
     "name": "Team Activity Feed",
     "description": "Configure a feed that lets your team know when builds finish, source code is checked in, and work items are updated.",
     "publisher": "arielrotter-aboyoun",
@@ -30,10 +30,10 @@
     ],
     "content": {
         "details": {
-            "path": "overview.md"
+            "path": "src/resources/img/overview.md"
         },
         "license": {
-            "path": "LICENSE.md"
+            "path": "LICENSE"
         }
     },
     "links": {
@@ -51,7 +51,7 @@
             "type": "ms.vss-dashboards-web.widget",
             "targets": [
                 "ms.vss-dashboards-web.widget-catalog",
-                "arielrotteraboyoun.vsts-extensions-myExtensions.FeedWidget.Configuration"
+                ".FeedWidget.Configuration"
             ],
             "properties": {
                 "name": "Team Activity Feed",
