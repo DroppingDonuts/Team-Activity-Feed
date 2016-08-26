@@ -1,0 +1,232 @@
+#content, #content > div {
+    height: inherit;
+    color: black;
+}
+
+#header-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.clickable {
+    color: #007ACC;
+}
+
+.clickable:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#feed-filter-bar {
+    position: absolute;
+    top: 50px;
+    right: 21px;
+}
+
+.sm {
+    margin-top: 0px;
+}
+
+.med {
+    margin-top: 60px;
+}
+
+.lg {
+    margin-top: 135px;
+}
+
+#no-items > img {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#no-items > h2 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#feed-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 84px);
+    width: calc(100% - 14px);
+    clear: both;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 14px;
+}
+
+#list {
+    list-style: none;
+    padding: 0px;
+}
+
+.message {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 296px;
+    position: relative;
+}
+
+.message-header {
+    overflow: hidden;
+    color: white;
+}
+
+.message-header h4 {
+    padding-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+a > h4 {
+    color: white;
+}
+
+a:hover > h4 {
+    text-decoration: underline;
+}
+
+a:visited > h4 {
+    color: white;
+}
+
+.message-icon {
+    float: left;
+    width: 5%;
+    margin-right: 2px;
+}
+
+span.bowtie-icon {
+    padding: 5px;
+}
+
+.message-body {
+    float: right;
+    width: 100%
+}
+
+.message-rightside {
+    max-width: 25%;
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    margin-right: 5px;
+    color: #737373;
+}
+
+.message-content {
+    float: left;
+    width: 75%;
+    font-size: 50%;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+h4 {
+    margin: 5px;
+}
+
+span.italics {
+    padding: 0px;
+    font-style: italic;
+}
+
+.build-status {
+    display: block;
+}
+
+.bowtie-status-success-outline {
+    color: #339933;
+}
+
+.bowtie-status-failure-outline {
+    color: #DA0A00;
+}
+
+.message {
+    border-color: #cccccc;
+}
+
+.message-body {
+    background-color: white;
+}
+
+.build.message-header.default {
+    background-color: #748189;
+}
+
+.checkin.message-header.default, .code-review.message-header.default, .pull-request.message-header.default, .push.message-header.default {
+    background-color: #68217A;
+}
+
+.work-item.message-header.default {
+    background-color: #009CCC;
+}
+
+.build.message-header.sunset {
+    background-color: #935CA3;
+}
+
+.checkin.message-header.sunset, .code-review.message-header.sunset, .pull-request.message-header.sunset, .push.message-header.sunset {
+    background-color: #FF4831;
+}
+
+.work-item.message-header.sunset {
+    background-color: #FF9B0D;
+}
+
+.build.message-header.coffee {
+    background-color: #8C4014;
+}
+
+.checkin.message-header.coffee, .code-review.message-header.coffee, .pull-request.message-header.coffee, .push.message-header.coffee {
+    background-color: #A66933;
+}
+
+.work-item.message-header.coffee {
+    background-color: #BF8F54;
+}
+
+.build.message-header.ocean {
+    background-color: #047eaf;
+}
+
+.checkin.message-header.ocean, .code-review.message-header.ocean, .pull-request.message-header.ocean, .push.message-header.ocean {
+    background-color: #60aed5;
+}
+
+.work-item.message-header.ocean {
+    background-color: #038C8C;
+}
+
+.build.message-header.candy {
+    background-color: #6bc5e1;
+}
+
+.checkin.message-header.candy, .code-review.message-header.candy, .pull-request.message-header.candy, .push.message-header.candy {
+    background-color: #dfacec;
+}
+
+.work-item.message-header.candy {
+    background-color: #f7a1d0;
+}
+
+.build.message-header.metal {
+    background-color: #737171;
+}
+
+.checkin.message-header.metal, .code-review.message-header.metal, .pull-request.message-header.metal, .push.message-header.metal {
+    background-color: #BD7C23;
+}
+
+.work-item.message-header.metal {
+    background-color: #D8A446;
+}

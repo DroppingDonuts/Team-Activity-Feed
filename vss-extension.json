@@ -1,0 +1,132 @@
+{
+    "manifestVersion": 1,
+    "id": "vsts-extensions-team-activity-feed",
+    "version": "1.0.1",
+    "name": "Team Activity Feed",
+    "description": "Configure a feed that lets your team know when builds finish, source code is checked in, and work items are updated.",
+    "publisher": "arielrotter-aboyoun",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "src/resources/img/logo.png"
+    },
+    "categories": [
+        "Plan and track"
+    ],
+    "tags": [
+        "dashboard",
+        "notification notifications",
+        "event events",
+        "activity activities",
+        "feed"
+    ],
+    "screenshots": [
+        {
+            "path": "src/resources/img/screenshot1.png"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "LICENSE.md"
+        }
+    },
+    "links": {
+        "learn": {
+            "uri": "https://github.com/DroppingDonuts/Team-Activity-Feed"
+        }
+    },
+    "branding": {
+        "color": "#6bc5e1",
+        "theme": "light"
+    },
+    "contributions": [
+        {
+            "id": "FeedWidget",
+            "type": "ms.vss-dashboards-web.widget",
+            "targets": [
+                "ms.vss-dashboards-web.widget-catalog",
+                "arielrotteraboyoun.vsts-extensions-myExtensions.FeedWidget.Configuration"
+            ],
+            "properties": {
+                "name": "Team Activity Feed",
+                "description": "Configure a feed that lets your team know when builds finish, source code is checked in, and work items are updated.",
+                "catalogIconUrl:": "src/resources/img/CatalogIcon.png",
+                "previewImageUrl": "src/resources/img/CatalogIcon.png",                            
+                "uri": "src/main.html",
+                "isNameConfigurable": true,
+                "supportedSizes": [
+                        {
+                            "rowSpan": 3,
+                            "columnSpan": 2
+                        },
+                        {
+                            "rowSpan": 2,
+                            "columnSpan": 2
+                        },
+                        {
+                            "rowSpan": 4,
+                            "columnSpan": 2
+                        }
+                    ],
+                "supportedScopes": ["project_team"]
+            }
+        },
+        {
+            "id": "FeedWidget.Configuration",
+            "type": "ms.vss-dashboards-web.widget-configuration",
+            "targets": [ "ms.vss-dashboards-web.widget-configuration" ],
+            "properties": {
+                "name": "FeedWidget Configuration",
+                "description": "Configures FeedWidget",
+                "uri": "src/configuration.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "src/main.html", "addressable": true
+        },
+        {
+            "path": "src/configuration.html", "addressable": true
+        },
+        {
+            "path": "src/scripts/configuration.js", "addressable": true
+        },
+        {
+            "path": "lib", "addressable": true
+        },
+        {
+            "path": "src/utils", "addressable": true
+        },
+        {
+            "path": "src/resources/img", "addressable": true
+        },
+        {
+            "path": "src/resources/jquery-ui-1.12.0", "addressable": true
+        },
+        {
+            "path": "src/resources/sdk", "addressable": true
+        },
+        {
+            "path": "src/resources/styles", "addressable": true
+        },
+        {
+            "path": "src/resources/bower_components/react/react.js", "addressable": true
+        },
+        {
+            "path": "src/resources/bower_components/react/react-dom.min.js", "addressable": true
+        }
+    ],
+    "scopes":[
+        "vso.chat_write",
+        "vso.code",
+        "vso.work", 
+        "vso.build"
+    ]
+}
